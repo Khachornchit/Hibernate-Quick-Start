@@ -1,0 +1,8 @@
+.settings
+.classpath
+.project
+/target/classes
+/target/maven-archiver
+/target/maven-status
+/target/test-classes
+/target/HibernateQuickStart-0.0.1-SNAPSHOT.jar
