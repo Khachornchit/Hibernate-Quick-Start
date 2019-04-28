@@ -1,4 +1,4 @@
-package pluto.solutions.jdbc;
+package khachornchit.net.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

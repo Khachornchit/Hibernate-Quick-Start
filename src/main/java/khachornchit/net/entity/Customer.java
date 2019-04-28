@@ -1,4 +1,4 @@
-package pluto.solutions.entity;
+package khachornchit.net.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
