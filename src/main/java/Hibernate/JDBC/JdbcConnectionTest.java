@@ -1,4 +1,4 @@
-package khachornchit.net.jdbc;
+package Hibernate.JDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

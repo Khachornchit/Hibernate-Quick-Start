@@ -1,4 +1,4 @@
-package khachornchit.net.operations.customer;
+package Hibernate.Operation.Customer;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import khachornchit.net.entity.Customer;
+import Hibernate.Entity.Customer;
 
 public class QueryCustomer {
 

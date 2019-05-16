@@ -5,11 +5,10 @@
 <hibernate-configuration>
 
 	<session-factory>
-		<!-- JDBC Database connection settings -->
 		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://localhost:3306/pluto.coffee?useSSL=false</property>
-		<property name="connection.username">username</property>
-		<property name="connection.password">password</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/coffee?useSSL=false&amp;createDatabaseIfNotExist=true</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">1234</property>
 		<property name="connection.pool_size">1</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
 		<property name="show_sql">true</property>

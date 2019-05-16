@@ -1,10 +1,10 @@
-package khachornchit.net.operations.customer;
+package Hibernate.Operation.Customer;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import khachornchit.net.entity.Customer;
+import Hibernate.Entity.Customer;
 
 public class CreateCustomer {
 
@@ -21,7 +21,7 @@ public class CreateCustomer {
 			for (int i = 0; i < 18; i++) {
 				String firstName = "firstname " + i;
 				String lastName = "lastname " + i;
-				String email = String.format("%s_%s@pluto.solutions", firstName, lastName);
+				String email = String.format("%s_%s@test.com", firstName, lastName);
 
 				session.save(new Customer(firstName, lastName, email));
 			}

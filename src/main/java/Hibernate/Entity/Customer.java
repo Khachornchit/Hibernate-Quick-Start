@@ -1,4 +1,4 @@
-package khachornchit.net.entity;
+package Hibernate.Entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
