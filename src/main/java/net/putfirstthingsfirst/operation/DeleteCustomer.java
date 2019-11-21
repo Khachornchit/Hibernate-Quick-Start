@@ -1,30 +1,25 @@
-package Hibernate.Operation.Customer;
+package net.putfirstthingsfirst.operation;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import Hibernate.Entity.Customer;
+import net.putfirstthingsfirst.entity.Customer;
 
-public class CreateCustomer {
+public class DeleteCustomer {
 
 	public static void main(String[] args) {
 
-		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
-				.addAnnotatedClass(Customer.class)
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Customer.class)
 				.buildSessionFactory();
 		try {
 			Session session = factory.getCurrentSession();
 			
 			System.out.println("Start transaction ...");
 			session.beginTransaction();
-			for (int i = 0; i < 18; i++) {
-				String firstName = "firstname " + i;
-				String lastName = "lastname " + i;
-				String email = String.format("%s_%s@test.com", firstName, lastName);
-
-				session.save(new Customer(firstName, lastName, email));
-			}
+//			Customer customer = session.get(Customer.class, 3);
+//			session.delete(customer);
+			session.createQuery("delete from Customer where id=5").executeUpdate();
 			session.getTransaction().commit();
 			
 			System.out.println("Commited done !");

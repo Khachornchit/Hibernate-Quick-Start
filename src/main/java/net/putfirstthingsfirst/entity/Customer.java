@@ -1,4 +1,4 @@
-package Hibernate.Entity;
+package net.putfirstthingsfirst.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

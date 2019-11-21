@@ -1,2 +1,2 @@
 # Java Hibernate
-Example of Java Hibernate with Maven 
+Java development of using Hibernate framework and Maven without JPA.

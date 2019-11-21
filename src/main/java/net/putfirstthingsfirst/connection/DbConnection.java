@@ -1,14 +1,14 @@
-package Hibernate.JDBC;
+package net.putfirstthingsfirst.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class JdbcConnectionTest {
+public class DbConnection {
 
 	public static void main(String[] args) {
-		String jdbcUrl = "jdbc:mysql://localhost:3306/pluto.coffee?userSSL=false";
-		String user = "plutocoffee";
-		String password = "plutocoffee";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/putfirstthingsfirst?userSSL=false";
+		String user = "putfirstthingsfirst";
+		String password = "putfirstthingsfirst";
 
 		try {
 			System.out.println("Connecting to database : " + jdbcUrl);

@@ -1,4 +1,4 @@
-package Hibernate.Operation.Customer;
+package net.putfirstthingsfirst.operation;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import Hibernate.Entity.Customer;
+import net.putfirstthingsfirst.entity.Customer;
 
 public class QueryCustomer {
 
